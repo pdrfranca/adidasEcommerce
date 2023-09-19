@@ -6,3 +6,152 @@
         font-weight: bold;
         font-family: 'Manrope';
 }
+
+body{
+        width: 100vw;
+        overflow-x: hidden;
+}
+
+.none {
+        display: none;
+}
+
+#backCircle{
+        position: absolute;
+        margin-left: 30vw;
+        margin-top: 3vw;
+        border-radius: 100%;
+        background-color: #b8b8b8;
+        filter: blur(100px);
+        width: 40vw;
+        height: 40vw;
+        z-index: -1;
+}
+
+#side{
+        position: absolute;
+        transform: rotate(90deg);
+        margin-left: -23vw;
+        width: 55vw;
+}
+
+header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+}
+
+header img{
+        width: 5vw;
+}
+
+#menu{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+}
+
+#into{
+        display: none;
+        border-radius: 0 10px 10px 10px;
+        padding: 10px;
+        flex-direction: column;
+        background-color: #eee;
+        margin-top: 25px;
+        position: absolute;
+}
+
+#menu:hover #into {
+        display: flex;
+}
+
+#menu:hover {
+        display: block;
+}
+
+#menu:hover #menu1 {
+        width: 20px;
+        transform: rotate(45deg);
+}
+
+#menu:hover #menu2 {
+        margin-top: -3px;
+        width: 20px;
+        transform: rotate(-45deg);
+}
+
+#menu:hover #menu3 {
+        background-color: transparent;
+}
+
+#menu1{
+        background-color: #000;
+        height: 3px;
+        width: 20px;
+}
+
+#menu2{
+        background-color: #000;
+        height: 3px;
+        width: 17px;
+}
+
+#menu3{
+        background-color: #000;
+        width: 19px;
+        height: 3px;
+}
+#slide{
+        width: 400vw;
+        display: flex;
+        margin-top: -100px;
+        justify-content: space-around;
+}
+
+#cards{
+        margin: 150px;
+        display: flex;
+        gap: 50px;
+}
+
+.card img {
+        width: 100%;
+        border-radius: 15px;
+}
+
+.card{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: calc(25% - 50px);
+}
+
+.fa-heart{
+        display: block;
+        position: absolute;
+        color: #1c1c1c;
+        margin: 20px;
+}
+
+.fa-beat{
+        display: block;
+        position: absolute;
+        color: #dc143c;
+        margin: 20px;
+}
+
+button {
+        border: none;
+        border: #1c1c1c solid 2px;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: transparent;
+}
+
+footer{
+        width: 100vw;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 25px;
+}
