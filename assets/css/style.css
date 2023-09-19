@@ -5,6 +5,7 @@
         margin: 0;
         font-weight: bold;
         font-family: 'Manrope';
+        transition: .3s;
 }
 
 body{
@@ -12,8 +13,48 @@ body{
         overflow-x: hidden;
 }
 
+#theme-toggle{
+        z-index: 1;
+        position: sticky;
+        margin: 20px;
+        top: 20px;
+}
+
+.dark{
+        color: #fff;
+        background-color:#979797;
+}
+
+.dark button{
+        color: #fff;
+        background-color: #979797;
+        border: #fff 2px solid;
+}
+
+.dark #backCircle{
+        background-color: #fff;
+}
+
+#obrigado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100vh;
+        width: 100vw;
+}
+
 .none {
         display: none;
+}
+
+.navigation{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
 }
 
 #backCircle{
@@ -49,6 +90,7 @@ header img{
         display: flex;
         flex-direction: column;
         gap: 4px;
+        z-index: 1;
 }
 
 #into{
@@ -61,26 +103,26 @@ header img{
         position: absolute;
 }
 
-#menu:hover #into {
+.open #into {
         display: flex;
 }
 
-#menu:hover {
+.open#menu {
         display: block;
 }
 
-#menu:hover #menu1 {
+.open #menu1 {
         width: 20px;
         transform: rotate(45deg);
 }
 
-#menu:hover #menu2 {
+.open #menu2 {
         margin-top: -3px;
         width: 20px;
         transform: rotate(-45deg);
 }
 
-#menu:hover #menu3 {
+.open #menu3 {
         background-color: transparent;
 }
 
@@ -102,7 +144,7 @@ header img{
         height: 3px;
 }
 #slide{
-        width: 400vw;
+        width: 500vw;
         display: flex;
         margin-top: -100px;
         justify-content: space-around;
@@ -140,12 +182,17 @@ header img{
         margin: 20px;
 }
 
+.card button.adicionado{
+        background-color: #00e658;
+        border: #00e658 solid 2px;
+}
+
 button {
         border: none;
         border: #1c1c1c solid 2px;
         border-radius: 5px;
         padding: 5px;
-        background-color: transparent;
+        background-color: #Fff;
 }
 
 footer{
